@@ -8,12 +8,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 
-//TODO Rename class so it matches your study-number
-public class UserDAOImpls134000 implements IUserDAO {
+public class UserDAOImpls185144 implements IUserDAO {
     //TODO Make a connection to the database
     private Connection createConnection() throws SQLException {
-        return  DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/chbu?"
-                    + "user=chbu&password=4thVbCaMOxnXi3aJ4");
+        return  DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s185144?"
+                    + "user=s185144&password=XFfpicTFLy2RzYknRgLMO");
     }
 
     @Override
