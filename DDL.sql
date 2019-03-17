@@ -9,9 +9,13 @@ PRIMARY KEY (user_id)
 CREATE TABLE roles_mandatory2(
  user_id TINYINT,
  role VARCHAR(20),
+ PRIMARY KEY(user_id, role),
  FOREIGN KEY (user_id) REFERENCES users_mandatory2(user_id)
  ON DELETE CASCADE);
- DROP TABLE roles_aflevering2;
+ 
+ 
+ 
+ DROP TABLE roles_mandatory2;
 
 INSERT INTO users_mandatory2 values (1, 'John', 'JO');
 INSERT INTO roles_mandatory2 values (1,'Admin');
