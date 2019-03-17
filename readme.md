@@ -12,6 +12,6 @@ Det eneste, der bekymrer mig, er, at der blev ikke specificeret, hvilke roller d
 
 
 ## Delopgaven2
-ERD:
+Entitiy relational diagram
 ![alt text](/diagram_jpg/delopgaven2.jpg "Title")
 
