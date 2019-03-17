@@ -13,7 +13,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class DALTest {
-    //TODO: Indsæt din egen implementering
     IUserDAO userDAO = new UserDAOImpls185144();
     @Test
     public void test() {
