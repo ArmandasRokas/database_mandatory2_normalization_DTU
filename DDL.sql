@@ -6,13 +6,18 @@ ini VARCHAR(4),
 PRIMARY KEY (user_id)
 );
 
-CREATE TABLE roles_aflevering_2(
+CREATE TABLE roles_mandatory2(
  user_id TINYINT,
  role VARCHAR(20),
  FOREIGN KEY (user_id) REFERENCES users_mandatory2(user_id)
  ON DELETE CASCADE);
- DROP TABLE roles_aflevering_2;
+ DROP TABLE roles_aflevering2;
 
+INSERT INTO users_mandatory2 values (1, 'John', 'JO');
+INSERT INTO roles_mandatory2 values (1,'Admin');
+SELECT * FROM users_mandatory2;
+SELECT * FROM roles_mandatory2;
+DELETE FROM users_mandatory2 WHERE user_id = 13;
 
 /*######################################
 4 tables structure

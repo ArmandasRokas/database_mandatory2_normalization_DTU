@@ -10,7 +10,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UserDAOImpls185144 implements IUserDAO {
-    //TODO Make a connection to the database
     private Connection createConnection() throws SQLException {
         return  DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s185144?"
                     + "user=s185144&password=XFfpicTFLy2RzYknRgLMO");
@@ -130,8 +129,8 @@ public class UserDAOImpls185144 implements IUserDAO {
             throw new DALException(e.getMessage(), e);
         } finally {
             try{
-                resultSetRoles.close();
-                resultSetUsers.close();
+                if(resultSetRoles != null) resultSetRoles.close();
+                if(resultSetUsers != null) resultSetUsers.close();
             } catch (SQLException e){
                 throw new DALException(e.getMessage(), e);
             }
@@ -143,11 +142,58 @@ public class UserDAOImpls185144 implements IUserDAO {
 
     @Override
     public void updateUser(IUserDTO user) throws DALException {
-        //TODO Implement this - Should update a user in the db using data from UserDTO object.
+
+        try(Connection connection = createConnection();
+            PreparedStatement updatePS =
+                    connection.prepareStatement(
+                            "UPDATE users_mandatory2 " +
+                                    "SET userName = ?, ini = ? " +
+                                    "WHERE user_id = ?");
+            PreparedStatement deleteRolesPS =
+                    connection.prepareStatement(
+                            "DELETE FROM roles_mandatory2 " +
+                                    "WHERE user_id = ?");
+            PreparedStatement insertRolesPS =
+                    connection.prepareStatement(
+                            "INSERT INTO roles_mandatory2 " +
+                                    "VALUES(?,?)")){
+
+            updatePS.setString(1, user.getUserName());
+            updatePS.setString(2, user.getIni());
+            updatePS.setInt(3, user.getUserId());
+            updatePS.executeUpdate();
+
+            deleteRolesPS.setInt(1,user.getUserId());
+            deleteRolesPS.executeUpdate();
+
+            for(String role: user.getRoles()){
+                insertRolesPS.setInt(1, user.getUserId());
+                insertRolesPS.setString(2, role);
+                insertRolesPS.executeUpdate();
+            }
+
+        } catch (SQLException e){
+            throw new DALException(e.getMessage(), e);
+        }
+
+
     }
+
 
     @Override
     public void deleteUser(int userId) throws DALException {
-        //TODO Implement this - Should delete a user with the given userid from the db.
+
+        try(Connection connection = createConnection();
+            PreparedStatement deletePS =
+                    connection.prepareStatement(
+                            "DELETE FROM users_mandatory2 " +
+                                    "WHERE user_id = ?")){
+            deletePS.setInt(1, userId);
+            deletePS.executeUpdate();
+        } catch (SQLException e){
+            throw new DALException(e.getMessage(), e);
+        }
+
+
     }
 }
