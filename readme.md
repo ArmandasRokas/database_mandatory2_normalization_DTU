@@ -4,7 +4,7 @@
 
 Først og fremmest blev koden sikret mod SQL Injections ved at bruge PreparedStatements, som håndterer brugerens input som parameter og ikke som en forespørgsel. Altså tillades der ikke at køre en anden forespørgsel end der blev defineret i PreparedStatement.
 
-Der blev også brugt CASCADE DELETE for at undgå Foreign key constraint violation, når der skal slettes en bruger fra databasen. Dette kunne komme, hvis der prøves at slettes en bruger fra users tabel, før der blev slettet brugerens roller. CASCADE gør det automatisk, dvs. fjerner brugeren både fra users tabel og roller tabeller samtidigt. 
+Der blev også brugt `CASCADE DELETE` for at undgå Foreign key constraint violation, når der skal slettes en bruger fra databasen. Dette kunne komme, hvis der prøves at slettes en bruger fra users tabel, før der blev slettet brugerens roller. CASCADE gør det automatisk, dvs. fjerner brugeren både fra users tabel og roller tabeller samtidigt. 
 
 Til sidst blev der tilføjet en kombineret Primary key til roles tabellen, som bistår af user_id og rolle, hvilket forhindrer at have dubletter i relationen.  
 
