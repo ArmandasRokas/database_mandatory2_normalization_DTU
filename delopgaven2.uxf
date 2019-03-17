@@ -4,14 +4,14 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>130</y>
+      <x>390</x>
+      <y>140</y>
       <w>100</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>User
 -
-_PK: userId_
+_PK: user_Id_
 userName
 ini
 roles</panel_attributes>
@@ -20,8 +20,8 @@ roles</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>220</y>
+      <x>470</x>
+      <y>230</y>
       <w>340</w>
       <h>190</h>
     </coordinates>
@@ -35,8 +35,8 @@ is a &gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>220</y>
+      <x>410</x>
+      <y>230</y>
       <w>50</w>
       <h>190</h>
     </coordinates>
@@ -50,10 +50,10 @@ a &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>330</x>
-      <y>390</y>
+      <x>360</x>
+      <y>400</y>
       <w>100</w>
-      <h>100</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Manager
 -
@@ -63,10 +63,10 @@ a &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>390</y>
+      <x>540</x>
+      <y>400</y>
       <w>100</w>
-      <h>100</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Guest
 -
@@ -76,8 +76,8 @@ last_visit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>690</x>
-      <y>390</y>
+      <x>720</x>
+      <y>400</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
@@ -89,23 +89,23 @@ last_visit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
-      <y>560</y>
+      <x>690</x>
+      <y>570</y>
       <w>150</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>Order
 -
-order_id
-FK: user_id
+_PK: order_id_
+_PK: FK: user_id_
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
-      <y>460</y>
+      <x>730</x>
+      <y>470</y>
       <w>110</w>
       <h>120</h>
     </coordinates>
@@ -120,47 +120,47 @@ ordred &gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>40</y>
+      <x>540</x>
+      <y>50</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>Product
 -
-</panel_attributes>
+_PK: product_id_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>790</x>
-      <y>230</y>
+      <x>820</x>
+      <y>240</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>Ingerdiens
 -
-name</panel_attributes>
+_PK: name_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
-      <y>130</y>
+      <x>690</x>
+      <y>140</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>ProductRecipe
 -
-</panel_attributes>
+_PK: recipe_id_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>150</y>
+      <x>470</x>
+      <y>160</y>
       <w>240</w>
       <h>50</h>
     </coordinates>
@@ -174,8 +174,8 @@ works on &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
-      <y>150</y>
+      <x>780</x>
+      <y>160</y>
       <w>130</w>
       <h>100</h>
     </coordinates>
@@ -188,8 +188,8 @@ contains &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
-      <y>220</y>
+      <x>440</x>
+      <y>230</y>
       <w>200</w>
       <h>190</h>
     </coordinates>
@@ -202,8 +202,8 @@ is a &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>110</y>
+      <x>580</x>
+      <y>120</y>
       <w>30</w>
       <h>80</h>
     </coordinates>
