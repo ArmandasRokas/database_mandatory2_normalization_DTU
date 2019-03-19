@@ -37,4 +37,4 @@ CREATE TABLE roles_mandatory2(
  ON DELETE CASCADE);
  ```
 #### Link til mere overskuelig SQL script  
-https://github.com/ArmandasRokas/database_mandatory2_normalization_DTU/edit/master/readme.md
+https://github.com/ArmandasRokas/database_mandatory2_normalization_DTU/blob/master/readme.md
