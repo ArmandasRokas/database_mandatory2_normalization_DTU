@@ -1,4 +1,9 @@
-<center>Centered text</center>
+
+Armandas Rokas (s185144)
+# Aflevering 2
+03/17 - 2019
+Indledende databaser
+
 
 ## Delopgave1
 
