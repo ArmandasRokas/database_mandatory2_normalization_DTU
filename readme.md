@@ -20,3 +20,20 @@ Det eneste, der bekymrer mig, er, at der blev ikke specificeret, hvilke roller d
 Entitiy relational diagram
 ![alt text](https://raw.githubusercontent.com/ArmandasRokas/database_mandatory2_normalization_DTU/master/diagram_jpg/delopgaven2.jpg "ERD")
 
+## DDL
+```SQL
+USE s185144;
+CREATE TABLE users_mandatory2(
+user_id TINYINT,  /*should be AUTO_INCREMENT*/
+userName VARCHAR(20), 
+ini VARCHAR(4), 
+PRIMARY KEY (user_id)
+);
+
+CREATE TABLE roles_mandatory2(
+ user_id TINYINT,
+ role VARCHAR(20),
+ PRIMARY KEY(user_id, role),
+ FOREIGN KEY (user_id) REFERENCES users_mandatory2(user_id)
+ ON DELETE CASCADE);
+ ```
