@@ -36,3 +36,5 @@ CREATE TABLE roles_mandatory2(
  FOREIGN KEY (user_id) REFERENCES users_mandatory2(user_id)
  ON DELETE CASCADE);
  ```
+Link til mere overskuelig SQL script:  
+https://github.com/ArmandasRokas/database_mandatory2_normalization_DTU/edit/master/readme.md
