@@ -20,4 +20,4 @@ Det eneste, der bekymrer mig, er, at der blev ikke specificeret, hvilke roller d
 ![alt text](https://raw.githubusercontent.com/ArmandasRokas/database_mandatory2_normalization_DTU/master/diagram_jpg/delopgaven2.jpg "ERD")
 
 ## DDL
-![alt text](https://raw.githubusercontent.com/ArmandasRokas/database_mandatory2_normalization_DTU/master/diagram_jpg/sql.jpg "SQL")
+![alt text](https://github.com/ArmandasRokas/database_mandatory2_normalization_DTU/blob/master/diagram_jpg/sql.JPG "SQL")
