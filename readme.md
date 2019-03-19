@@ -1,4 +1,4 @@
-
+<center>Centered text</center>
 
 ## Delopgave1
 
