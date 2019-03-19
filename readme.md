@@ -24,7 +24,7 @@ Entitiy relational diagram
 ```SQL
 USE s185144;
 CREATE TABLE users_mandatory2(
-user_id TINYINT,  /*should be AUTO_INCREMENT*/
+user_id TINYINT, 
 userName VARCHAR(20), 
 ini VARCHAR(4), 
 PRIMARY KEY (user_id)
