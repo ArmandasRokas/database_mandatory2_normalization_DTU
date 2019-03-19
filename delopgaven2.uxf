@@ -4,14 +4,15 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
-      <y>130</y>
+      <x>310</x>
+      <y>320</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>User
 -
 _PK: user_Iíd_
+-
 userName
 ini</panel_attributes>
     <additional_attributes/>
@@ -19,52 +20,35 @@ ini</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>200</y>
-      <w>590</w>
-      <h>200</h>
+      <x>350</x>
+      <y>390</y>
+      <w>120</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=0..1
-is a &gt;
+    <panel_attributes>lt=&lt;&lt;-
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0;550.0;70.0;550.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;100.0;100.0;100.0;120.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>170</x>
-      <y>200</y>
-      <w>230</w>
-      <h>260</h>
+      <x>200</x>
+      <y>330</y>
+      <w>130</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
-have a &gt;
-&lt; managed by
+managed by &gt;
 </panel_attributes>
-    <additional_attributes>210.0;220.0;10.0;220.0;10.0;10.0</additional_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0;10.0;60.0;110.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>380</y>
-      <w>100</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>Manager
--
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>600</x>
-      <y>380</y>
+      <x>230</x>
+      <y>510</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
@@ -76,8 +60,8 @@ last_visit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>750</x>
-      <y>380</y>
+      <x>400</x>
+      <y>510</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
@@ -89,82 +73,53 @@ last_visit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>560</y>
-      <w>150</w>
+      <x>700</x>
+      <y>510</y>
+      <w>120</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>Order
 -
 _PK: order_id_
-_PK: FK: user_id_
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>450</y>
-      <w>110</w>
-      <h>130</h>
+      <x>490</x>
+      <y>530</y>
+      <w>230</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=0..*
-ordred &gt;
+can order &gt;
 &lt; ordered by
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>40</y>
-      <w>100</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>User_Product
--
-FK: user1_id
-FK: user2_id
-FK: product_id
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>740</x>
-      <y>130</y>
-      <w>100</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>Ingredient
--
-_PK: name_</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>470</x>
-      <y>130</y>
+      <x>580</x>
+      <y>320</y>
       <w>100</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>Product
 -
-_PK: product_id_</panel_attributes>
+_PK: product_id_
+-</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>260</x>
-      <y>150</y>
-      <w>230</w>
+      <x>400</x>
+      <y>340</y>
+      <w>200</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=-
@@ -173,98 +128,152 @@ m2= 0..*
 
 works on &gt;
 &lt; made by </panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>560</x>
-      <y>150</y>
-      <w>200</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=0..*
-m2=1..*
-
-contains &gt;
-&lt; is a part of</panel_attributes>
     <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
-      <y>200</y>
-      <w>460</w>
-      <h>200</h>
+      <x>270</x>
+      <y>390</y>
+      <w>110</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=0..1
-is a &gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0;420.0;100.0;420.0;180.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>360</x>
-      <y>110</y>
-      <w>30</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;100.0;10.0;100.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
-      <y>30</y>
-      <w>170</w>
+      <x>310</x>
+      <y>160</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Rolle
+-
+PK: rolle
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>210</y>
+      <w>100</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=0..*
+describes &gt;
+&lt; can have
+ </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>150</y>
+      <w>130</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Product_Ingredient
+    <panel_attributes>Ingredient
+-
+PK: id
+-
+available_quantity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>150</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Recipe
+-
+PK: id
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>180</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2= 1..*
+
+contains &gt;
+&lt; can be in</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>160</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>90</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Recipe_Ingredient
 -
 FK: product_id
 FK: ingrediens_id
+quantity
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>620</x>
-      <y>90</y>
-      <w>30</w>
-      <h>100</h>
+      <x>520</x>
+      <y>220</y>
+      <w>160</w>
+      <h>120</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=-
+m1=1
+m2= 1..*
+
+produces &gt;
+&lt; made of</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;120.0;40.0;120.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>410</y>
-      <w>30</w>
-      <h>100</h>
+      <x>610</x>
+      <y>390</y>
+      <w>180</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>240</x>
-      <y>490</y>
-      <w>130</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>User_Manager
--
-FK: user_id
-FK: manager_id</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>lt=-
+m1= 1..*
+m2= 0..*
+&lt; contains
+can be in &gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;140.0;80.0;140.0;120.0</additional_attributes>
   </element>
 </diagram>
