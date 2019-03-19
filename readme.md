@@ -1,8 +1,8 @@
 
 Armandas Rokas (s185144)
-# Aflevering 2
+# Indledende databaser: Aflevering 2 
 03/17 - 2019
-Indledende databaser
+
 
 
 ## Delopgave1
