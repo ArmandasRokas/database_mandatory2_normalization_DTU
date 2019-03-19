@@ -20,21 +20,4 @@ Det eneste, der bekymrer mig, er, at der blev ikke specificeret, hvilke roller d
 ![alt text](https://raw.githubusercontent.com/ArmandasRokas/database_mandatory2_normalization_DTU/master/diagram_jpg/delopgaven2.jpg "ERD")
 
 ## DDL
-```SQL
-USE s185144;
-CREATE TABLE users_mandatory2(
-user_id TINYINT, 
-userName VARCHAR(20), 
-ini VARCHAR(4), 
-PRIMARY KEY (user_id)
-);
-
-CREATE TABLE roles_mandatory2(
- user_id TINYINT,
- role VARCHAR(20),
- PRIMARY KEY(user_id, role),
- FOREIGN KEY (user_id) REFERENCES users_mandatory2(user_id)
- ON DELETE CASCADE);
- ```
-#### Link til mere overskuelig SQL script  
-https://github.com/ArmandasRokas/database_mandatory2_normalization_DTU/blob/master/readme.md
+![alt text](https://raw.githubusercontent.com/ArmandasRokas/database_mandatory2_normalization_DTU/master/diagram_jpg/sql.jpg "SQL")
